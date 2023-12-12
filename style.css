@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Noto+Serif:wght@200;400;600&display=swap");
+
+:root {
+  --color-firstly: #163020;
+  --color-secondary: #304d30;
+  --color-thirdly: #b6c4b6;
+  --color-fourthly: #eef0e5;
+  --color-additional: #ffff;
+
+  --primary-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+
+  --font-firstly: "Noto Serif", serif;
+  --font-secondary: "Mina", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-firstly);
+  font-size: 16px;
+}
+
+header {
+  min-height: 200px;
+  width: 100%;
+  box-shadow: var(--primary-shadow);
+  background-color: var(--color-secondary);
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 40px 0px 40px;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1440px;
+  min-height: 105px;
+  gap: 50px;
+  border-radius: 10px;
+  box-shadow: var(--primary-shadow);
+  background-color: #163020;
+}
+
+.top-navbar img {
+  margin: 15px 100px 0px 0px;
+  height: 85px;
+}
+
+.top-navbar a {
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--color-additional);
+}
+
+.top-navbar a:nth-child(8) {
+  min-width: 25px;
+}
+
+.top-navbar a:nth-child(9) {
+  min-width: 25px;
+  visibility: hidden;
+}
+
+.main-changing-title {
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  min-height: 58.19px;
+  padding: 0px 0px 0px 280px;
+  margin-top: 15px;
+  font-family: var(--font-secondary);
+  color: var(--color-additional);
+}
+
+.wrapper-image {
+  position: absolute;
+  left: 1051px;
+  top: 150px;
+  height: 250px;
+  width: 500px;
+  border-radius: 10px;
+  background-color: var(--color-thirdly);
+}
+
+.web-below-top-side {
+  height: 200px;
+  background-color: rgb(74, 135, 17);
+}
+
+.contact-description {
+  max-width: 500px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tell-about label[for="about"],
+.email label[for="email"] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* input,
+textarea {
+  display: block-inline;
+  max-width: 400px;
+  padding: 5px 5px 5px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  resize: none;
+} */
