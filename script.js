@@ -14,7 +14,7 @@ apieMus.addEventListener("click", function () {
 });
 
 rusys.addEventListener("click", function () {
-  changeText.textContent = "Rušys";
+  changeText.textContent = "Rūšys";
 });
 
 faktai.addEventListener("click", function () {
@@ -26,7 +26,7 @@ pazymek.addEventListener("click", function () {
 });
 
 kartu.addEventListener("click", function () {
-  changeText.textContent = "Saugomime kartu";
+  changeText.textContent = "Saugokime kartu";
 });
 
 saltiniai.addEventListener("click", function () {
@@ -35,15 +35,32 @@ saltiniai.addEventListener("click", function () {
 
 // Change picture
 
-// function changeImage() {
-//   if (
-//     document.getElementById("imgClickAndChange").src ==
-//     "./assets/images/logo.png"
-//   ) {
-//     document.getElementById("imgClickAndChange").src =
-//       "https://as2.ftcdn.net/v2/jpg/05/96/53/35/1000_F_596533582_UgVp2PyEDGWBx71tKyFm9jvYRnSvVerZ.jpg;
-//   } else {
-//     document.getElementById("imgClickAndChange").src =
-//       "http://www.userinterfaceicons.com/80x80/minimize.png";
-//   }
-// }
+const myImg = document.getElementById("myImg");
+
+apieMus.addEventListener("click", function () {
+  myImg.src = "./assets/images/about-us.jpg";
+});
+
+rusys.addEventListener("click", function () {
+  myImg.src = "./assets/images/species.jpg";
+});
+
+faktai.addEventListener("click", function () {
+  myImg.src = "./assets/images/facts.jpg";
+});
+
+pazymek.addEventListener("click", function () {
+  myImg.src = "./assets/images/mark.jpg";
+});
+
+pazymek.addEventListener("click", function () {
+  myImg.src = "./assets/images/mark.jpg";
+});
+
+kartu.addEventListener("click", function () {
+  myImg.src = "./assets/images/together.jpg";
+});
+
+saltiniai.addEventListener("click", function () {
+  myImg.src = "./assets/images/source.jpg";
+});
